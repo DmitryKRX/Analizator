@@ -1,14 +1,31 @@
 
-k := 34
-, ;
->
- ab
-for i:=0 to 6 step 1
-new := 13o
-sec := 101b
-next
-do
-x:=1.33
-y:=36d
-14abh
-/* x123 */
+{
+% int1, int2, i;
+! real1, real2, real3;
+$ bool1, bool2, bool3;
+
+real3 := 10101b;
+int1 := 32d;
+bool1 := true;
+
+if (!bool1) begin
+    real1 := (50 / 1.0) + int1;
+    int2 := 10 end
+else real1 := 100;
+
+real1 := 14e-2;
+
+if (i == 0)
+    int1 := 100 && 20 || 5;
+
+while (int1 < 10) begin
+    real2 := 5o
+end;
+
+for i := 0 to 5 step 1
+    real1 := i + 1
+next;
+
+readln real1, bool2, int1;
+writeln real2, 5 + 4;
+}
