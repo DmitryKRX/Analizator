@@ -11,7 +11,7 @@
 
 ## Грамматические правила модельного языка
 
-
+```
 PROGRAM → “{“ {/ (DESCRIPTION | OPERATOR); /} “}” 
 
 DESCRIPTION → TYPE IDENTIFICATOR {, IDENTIFICATOR}
@@ -58,22 +58,22 @@ UNARY_OPER → !
 
 NUMBER → INT | REAL 
 
-INT → BINARY | OCTA | DECIMAL | HEXA 
+INT → BINARY | OCTA | DECIMAL | HEXA
 
-BINARY → {/ 0 | 1 /} (B | b) 
+BINARY → {/ 0 | 1 /} (B | b)
 
-OCTA → {/ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 /} (O | o) 
+OCTA → {/ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 /} (O | o)
 
-DECIMAL → {/ DIGIT /} [D | d]  
+DECIMAL → {/ DIGIT /} [D | d]
 
-HEXA → DIGIT {DIGIT | A | B | C | D | E | F | a | b | c | d | e | f} (H | h) 
+HEXA → DIGIT {DIGIT | A | B | C | D | E | F | a | b | c | d | e | f} (H | h)
 
-REAL → NUM_STRING ORDER | [NUMBER_STRING] . [NUM_STRING] [ORDER] 
+REAL → NUM_STRING ORDER | [NUMBER_STRING] . [NUM_STRING] [ORDER]
 
-NUM_STRING → {/ DIGIT /} 
+NUM_STRING → {/ DIGIT /}
 
 ORDER → (E | E) [+ | -] NUM_STRING  
-
+```
 
 ## Диаграмма состояний конечного автомата
 
